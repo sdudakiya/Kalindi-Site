@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO, AEO & GEO Blog | Kalindi Marketing</title>
+    <meta name="description"
+        content="Expert insights on SEO, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), social media marketing, and digital strategy from the Kalindi Marketing team." />
+    <meta name="keywords"
+        content="digital marketing blog, SEO tips, AEO guide, GEO optimization, generative engine optimization guide, AI search optimization" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://kalindimarketing.com/blog.html" />
+    <meta property="og:title" content="SEO, AEO & GEO Blog | Kalindi Marketing" />
+    <meta property="og:description"
+        content="Expert insights on SEO, AEO, GEO, social media marketing, and digital strategy from the Kalindi Marketing team." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kalindimarketing.com/blog.html" />
+    <meta property="og:image" content="https://kalindimarketing.com/assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SEO, AEO & GEO Blog | Kalindi Marketing" />
+    <meta name="twitter:description"
+        content="Expert insights on SEO, AEO, GEO, social media marketing, and digital strategy from the Kalindi Marketing team." />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Kalindi Marketing Blog","description":"Expert digital marketing insights on SEO, AEO, GEO, and AI-era search strategies.","url":"https://kalindimarketing.com/blog.html","publisher":{"@type":"Organization","name":"Kalindi Marketing","logo":{"@type":"ImageObject","url":"https://kalindimarketing.com/assets/logo.png"}},"blogPost":[{"@type":"BlogPosting","headline":"The Complete Guide to GEO: How to Get Your Brand Cited by ChatGPT & Gemini in 2026","datePublished":"2026-03-01","author":{"@type":"Organization","name":"Kalindi Marketing"}},{"@type":"BlogPosting","headline":"Technical SEO Checklist for 2026: Core Web Vitals, Schema & AI Readiness","datePublished":"2026-02-15","author":{"@type":"Organization","name":"Kalindi Marketing"}},{"@type":"BlogPosting","headline":"How to Appear in Google AI Overviews: The AEO Playbook","datePublished":"2026-02-01","author":{"@type":"Organization","name":"Kalindi Marketing"}},{"@type":"BlogPosting","headline":"SEO vs AEO vs GEO: Which One Does Your Business Need in 2026?","datePublished":"2026-01-15","author":{"@type":"Organization","name":"Kalindi Marketing"}}]}</script>
+    <style>
+        #back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--gradient-accent);
+            color: white;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: var(--shadow-blue);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+            border: none;
+        }
+
+        #back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.25rem;
+            border-radius: 100px;
+            border: 2px solid var(--grey-200);
+            font-weight: 600;
+            font-size: 0.88rem;
+            cursor: pointer;
+            background: var(--white);
+            color: var(--text-mid);
+            transition: var(--transition);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            border-color: var(--blue);
+            background: var(--blue);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo.png" alt="Kalindi Marketing Logo" />
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary navbar__cta">Get Free Audit</a>
+            <button class="navbar__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="page-hero__orb page-hero__orb--1"></div>
+            <div class="page-hero__orb page-hero__orb--2"></div>
+            <div class="container" style="position:relative;z-index:2;">
+                <div class="section-label section-label--light" style="display:inline-flex;margin-bottom:1rem;">Insights
+                    &amp; Resources</div>
+                <h1>Digital Marketing Blog</h1>
+                <p>Expert guides on SEO, AEO, GEO, and the future of AI-powered search — straight from our team.</p>
+                <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Blog</span></div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="section" style="padding-bottom:2rem;">
+            <div class="container">
+                <div class="section-label reveal" style="display:inline-flex;margin-bottom:1.5rem;">Featured Article
+                </div>
+                <div class="reveal"
+                    style="background:var(--gradient-primary);border-radius:var(--radius-lg);overflow:hidden;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;min-height:360px;">
+                        <div
+                            style="padding:3rem;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2;">
+                            <span class="blog-card__tag"
+                                style="background:rgba(0,200,255,0.2);color:#00C8FF;margin-bottom:1rem;">GEO
+                                Strategy</span>
+                            <h2 style="color:white;font-size:2rem;margin-bottom:1rem;line-height:1.3;">The Complete
+                                Guide to
+                                GEO: How to Get Your Brand Cited by ChatGPT &amp; Gemini in 2026</h2>
+                            <p style="color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">Generative Engine Optimization
+                                is
+                                the most important new discipline in digital marketing. Here's exactly how to execute
+                                it.
+                            </p>
+                            <div style="display:flex;align-items:center;gap:1.5rem;">
+                                <a href="blog-geo-guide.html" class="btn btn--white"
+                                    style="padding:0.65rem 1.5rem;font-size:0.9rem;">Read
+                                    Full Guide →</a>
+                                <div style="color:rgba(255,255,255,0.55);font-size:0.82rem;">March 2026 · 15 min read
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            style="background:rgba(0,120,255,0.15);display:flex;align-items:center;justify-content:center;font-size:6rem;position:relative;">
+                            <div
+                                style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,200,255,0.15),rgba(0,0,128,0.3));">
+                            </div>
+                            <span
+                                style="position:relative;z-index:2;filter:drop-shadow(0 0 30px rgba(0,200,255,0.6));">✨</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Articles -->
+        <section class="section" style="padding-top:2rem;">
+            <div class="container">
+                <div class="category-filter reveal">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">SEO</button>
+                    <button class="filter-btn">AEO</button>
+                    <button class="filter-btn">GEO</button>
+                    <button class="filter-btn">Social Media</button>
+                    <button class="filter-btn">PPC</button>
+                    <button class="filter-btn">Strategy</button>
+                </div>
+                <div class="grid-3">
+
+                    <a href="blog-technical-seo.html" class="blog-card reveal reveal-delay-1"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">🔍</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">SEO</span>
+                            <h3>Technical SEO Checklist for 2026: Core Web Vitals, Schema &amp; AI Readiness</h3>
+                            <p style="font-size:0.88rem;">Everything you need to audit and fix to ensure your site
+                                performs
+                                in both traditional and AI-powered search.</p>
+                            <div class="blog-card__meta"><span>📅 Feb 2026</span><span>⏱ 12 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-google-ai-overviews.html" class="blog-card reveal reveal-delay-2"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">🤖</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">AEO</span>
+                            <h3>How to Appear in Google AI Overviews: The AEO Playbook</h3>
+                            <p style="font-size:0.88rem;">Step-by-step tactics to structure your content so Google's AI
+                                consistently picks your brand as the answer.</p>
+                            <div class="blog-card__meta"><span>📅 Feb 2026</span><span>⏱ 10 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-seo-vs-aeo-vs-geo.html" class="blog-card reveal reveal-delay-3"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">📈</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">Strategy</span>
+                            <h3>SEO vs AEO vs GEO: Which One Does Your Business Need in 2026?</h3>
+                            <p style="font-size:0.88rem;">A clear breakdown of the three disciplines and how to
+                                prioritize
+                                your investment based on your goals.</p>
+                            <div class="blog-card__meta"><span>📅 Jan 2026</span><span>⏱ 8 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-linkedin-b2b.html" class="blog-card reveal reveal-delay-4"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">📱</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">Social Media</span>
+                            <h3>LinkedIn Content Strategy That Actually Generates B2B Leads in 2026</h3>
+                            <p style="font-size:0.88rem;">Proven frameworks for turning LinkedIn presence into a
+                                consistent
+                                pipeline of qualified B2B opportunities.</p>
+                            <div class="blog-card__meta"><span>📅 Jan 2026</span><span>⏱ 9 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-google-ads-bidding.html" class="blog-card reveal reveal-delay-5"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">💰</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">PPC</span>
+                            <h3>Google Ads Smart Bidding in 2026: When to Use It and When to Stay Manual</h3>
+                            <p style="font-size:0.88rem;">A performance marketer's honest breakdown of automated vs.
+                                manual
+                                bidding strategies and real ROAS data.</p>
+                            <div class="blog-card__meta"><span>📅 Dec 2025</span><span>⏱ 11 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-eeat-llms.html" class="blog-card reveal reveal-delay-6"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">🧠</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">GEO</span>
+                            <h3>E-E-A-T in the Age of LLMs: How AI Judges Your Brand's Credibility</h3>
+                            <p style="font-size:0.88rem;">What Experience, Expertise, Authoritativeness, and
+                                Trustworthiness
+                                mean when ChatGPT is your audience.</p>
+                            <div class="blog-card__meta"><span>📅 Dec 2025</span><span>⏱ 14 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-link-building.html" class="blog-card reveal reveal-delay-1"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">🔗</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">SEO</span>
+                            <h3>Link Building in 2026: The Strategies That Still Work (And the Ones That Don't)</h3>
+                            <p style="font-size:0.88rem;">The definitive guide to earning high-authority backlinks
+                                without
+                                shortcuts that could harm your rankings.</p>
+                            <div class="blog-card__meta"><span>📅 Nov 2025</span><span>⏱ 13 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-voice-search.html" class="blog-card reveal reveal-delay-2"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">🎙️</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">AEO</span>
+                            <h3>Voice Search Optimization: How to Win Siri, Alexa &amp; Google Assistant Results</h3>
+                            <p style="font-size:0.88rem;">Conversational queries are fundamentally different. Here's how
+                                to
+                                structure content for voice-first search.</p>
+                            <div class="blog-card__meta"><span>📅 Oct 2025</span><span>⏱ 7 min</span></div>
+                        </div>
+                    </a>
+
+                    <a href="blog-strategy-from-scratch.html" class="blog-card reveal reveal-delay-3"
+                        style="text-decoration:none;color:inherit;">
+                        <div class="blog-card__img">🌐</div>
+                        <div class="blog-card__body">
+                            <span class="blog-card__tag">Strategy</span>
+                            <h3>How to Build a Digital Marketing Strategy from Scratch in 2026</h3>
+                            <p style="font-size:0.88rem;">A complete, beginner-friendly framework for building a modern
+                                digital marketing strategy that covers all channels.</p>
+                            <div class="blog-card__meta"><span>📅 Oct 2025</span><span>⏱ 16 min</span></div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Newsletter CTA -->
+                <div class="reveal"
+                    style="background:var(--gradient-primary);border-radius:var(--radius-lg);padding:3rem;text-align:center;margin-top:4rem;position:relative;overflow:hidden;">
+                    <div
+                        style="position:absolute;top:-60px;right:-60px;width:250px;height:250px;border-radius:50%;background:rgba(0,200,255,0.15);filter:blur(60px);">
+                    </div>
+                    <div style="position:relative;z-index:2;">
+                        <h3 style="color:white;font-size:1.8rem;margin-bottom:0.75rem;">Get Weekly Marketing Insights
+                        </h3>
+                        <p style="color:rgba(255,255,255,0.8);margin-bottom:1.75rem;">Join 5,000+ marketers who get our
+                            best
+                            SEO, AEO &amp; GEO tips every week.</p>
+                        <form style="display:flex;gap:1rem;max-width:480px;margin:0 auto;flex-wrap:wrap;"
+                            onsubmit="return false;">
+                            <input type="email" placeholder="Enter your email address"
+                                style="flex:1;min-width:200px;padding:0.85rem 1.25rem;border-radius:100px;border:2px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:white;font-size:1rem;"
+                                required />
+                            <button type="submit" class="btn btn--white" style="white-space:nowrap;">Subscribe
+                                →</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand"><img src="assets/logo.png" alt="Kalindi Marketing"
+                        style="height:48px;margin-bottom:1rem;" />
+                    <p>India's premier agency for SEO, AEO, GEO, and digital marketing.</p>
+                    <div class="footer__socials"><a href="#" class="social-icon" aria-label="LinkedIn">in</a><a href="#"
+                            class="social-icon" aria-label="Instagram">▦</a><a href="#" class="social-icon"
+                            aria-label="Twitter">𝕏</a><a href="#" class="social-icon" aria-label="YouTube">▶</a></div>
+                </div>
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="services.html#seo">SEO</a></li>
+                        <li><a href="services.html#aeo">AEO</a></li>
+                        <li><a href="services.html#geo">GEO</a></li>
+                        <li><a href="services.html#social">Social Media</a></li>
+                        <li><a href="services.html#ppc">PPC</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact</h4>
+                    <ul class="footer__links">
+                        <li><a href="mailto:hello@kalindimarketing.com">hello@kalindimarketing.com</a></li>
+                        <li><a href="contact.html">Book a Free Call</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 Kalindi Marketing. All rights reserved.</p>
+                <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="scripts/main.js"></script>
+    <script>
+        // Filter buttons UI (visual only — no actual filtering needed for static site)
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

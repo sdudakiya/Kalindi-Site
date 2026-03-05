@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing Services | Kalindi Marketing</title>
+    <meta name="description"
+        content="Explore Kalindi Marketing's full range of digital marketing services: SEO, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), Social Media, PPC, and Content Marketing." />
+    <meta name="keywords"
+        content="SEO services, AEO services, GEO services, digital marketing services, PPC agency, social media marketing, content marketing agency" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://kalindimarketing.com/services.html" />
+    <meta property="og:title" content="Services — Kalindi Marketing | SEO, AEO, GEO & More" />
+    <meta property="og:description"
+        content="Complete digital marketing services for the AI era: SEO, AEO, GEO, Social Media, PPC, and Content Marketing." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://kalindimarketing.com/assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Digital Marketing Services | Kalindi Marketing" />
+    <meta name="twitter:description"
+        content="Complete digital marketing services for the AI era: SEO, AEO, GEO, Social Media, PPC, and Content Marketing." />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Digital Marketing","provider":{"@type":"Organization","name":"Kalindi Marketing","url":"https://kalindimarketing.com"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Digital Marketing Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO (Search Engine Optimization)"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AEO (Answer Engine Optimization)"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"GEO (Generative Engine Optimization)"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Social Media Marketing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"PPC Advertising"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Content Marketing"}}]}}</script>
+    <style>
+        #back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--gradient-accent);
+            color: white;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: var(--shadow-blue);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+            border: none;
+        }
+
+        #back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-detail {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--grey-100);
+        }
+
+        .service-detail:last-child {
+            border-bottom: none;
+        }
+
+        .service-detail__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-detail__grid.reverse {
+            direction: rtl;
+        }
+
+        .service-detail__grid.reverse>* {
+            direction: ltr;
+        }
+
+        .service-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(90deg, rgba(0, 120, 255, 0.1), rgba(0, 200, 255, 0.06));
+            border: 1px solid rgba(0, 120, 255, 0.2);
+            color: var(--blue);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.9rem;
+            border-radius: 100px;
+            margin-bottom: 1rem;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.96rem;
+            color: var(--text-mid);
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            color: var(--blue);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .service-visual {
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            position: relative;
+            overflow: hidden;
+            min-height: 320px;
+            background: var(--gradient-primary);
+        }
+
+        .service-visual__orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .service-visual__orb--1 {
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 120, 255, 0.35);
+            top: -40px;
+            right: -40px;
+        }
+
+        .service-visual__orb--2 {
+            width: 150px;
+            height: 150px;
+            background: rgba(0, 200, 255, 0.2);
+            bottom: -30px;
+            left: -30px;
+        }
+
+        .service-visual__emoji {
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 0 30px rgba(0, 200, 255, 0.5));
+        }
+
+        @media(max-width:768px) {
+            .service-detail__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-detail__grid.reverse {
+                direction: ltr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo.png" alt="Kalindi Marketing Logo" />
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary navbar__cta">Get Free Audit</a>
+            <button class="navbar__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="page-hero__orb page-hero__orb--1"></div>
+            <div class="page-hero__orb page-hero__orb--2"></div>
+            <div class="container" style="position:relative;z-index:2;">
+                <div class="section-label section-label--light" style="display:inline-flex;margin-bottom:1rem;">Our
+                    Services
+                </div>
+                <h1>Digital Marketing Services<br />Built for the <span class="text-gradient">AI Era</span></h1>
+                <p>From traditional SEO to cutting-edge AEO and GEO — we cover every channel that matters for your
+                    brand's
+                    visibility.</p>
+                <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Services</span></div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:2rem;">
+            <div class="container">
+                <!-- Quick Nav Chips -->
+                <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;margin-bottom:3rem;"
+                    class="reveal">
+                    <a href="#seo" class="btn btn--outline" style="padding:0.5rem 1.25rem;font-size:0.88rem;">🔍 SEO</a>
+                    <a href="#aeo" class="btn btn--outline" style="padding:0.5rem 1.25rem;font-size:0.88rem;">🤖 AEO</a>
+                    <a href="#geo" class="btn btn--outline" style="padding:0.5rem 1.25rem;font-size:0.88rem;">✨ GEO</a>
+                    <a href="#social" class="btn btn--outline" style="padding:0.5rem 1.25rem;font-size:0.88rem;">📱
+                        Social
+                        Media</a>
+                    <a href="#ppc" class="btn btn--outline" style="padding:0.5rem 1.25rem;font-size:0.88rem;">💰 PPC</a>
+                    <a href="#content" class="btn btn--outline" style="padding:0.5rem 1.25rem;font-size:0.88rem;">✍️
+                        Content</a>
+                </div>
+
+                <!-- SEO -->
+                <div class="service-detail" id="seo">
+                    <div class="service-detail__grid">
+                        <div class="reveal-left">
+                            <div class="service-tag">🔍 Traditional Search</div>
+                            <h2>Search Engine Optimization (SEO)</h2>
+                            <p style="margin:1rem 0 0.5rem;">Rank higher, drive more traffic, and convert visitors into
+                                customers — with an SEO strategy built on data, authority, and long-term sustainability.
+                            </p>
+                            <p>We go beyond keywords. Our holistic SEO approach covers every ranking factor — from Core
+                                Web
+                                Vitals to E-E-A-T signals and topical authority building.</p>
+                            <ul class="feature-list">
+                                <li>Comprehensive technical SEO audit &amp; fixes</li>
+                                <li>Keyword research &amp; topical map creation</li>
+                                <li>On-page optimization (meta, schema, headings, content)</li>
+                                <li>High-authority backlink acquisition</li>
+                                <li>Core Web Vitals &amp; page speed optimization</li>
+                                <li>Local SEO &amp; Google Business Profile management</li>
+                                <li>Monthly ranking &amp; traffic reports</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary mt-4">Start SEO Campaign →</a>
+                        </div>
+                        <div class="reveal-right">
+                            <div class="service-visual">
+                                <div class="service-visual__orb service-visual__orb--1"></div>
+                                <div class="service-visual__orb service-visual__orb--2"></div>
+                                <span class="service-visual__emoji">🔍</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AEO -->
+                <div class="service-detail" id="aeo">
+                    <div class="service-detail__grid reverse">
+                        <div class="reveal-right">
+                            <div class="service-tag">🤖 AI Answer Engines</div>
+                            <h2>AEO — Answer Engine Optimization</h2>
+                            <p style="margin:1rem 0 0.5rem;">Position your brand as the default answer in Google AI
+                                Overviews, Bing Copilot, Siri, Alexa, and every AI-powered search surface.</p>
+                            <p>AEO is the next frontier of SEO. When a user asks an AI engine a question, we make sure
+                                your
+                                brand provides the answer — establishing trust and driving direct intent traffic.</p>
+                            <ul class="feature-list">
+                                <li>AI Overview (SGE) visibility strategy</li>
+                                <li>Featured snippet &amp; People Also Ask optimization</li>
+                                <li>Conversational query content structuring</li>
+                                <li>FAQ &amp; HowTo schema markup implementation</li>
+                                <li>Voice search optimization for Siri &amp; Alexa</li>
+                                <li>Bing Chat &amp; Microsoft Copilot visibility</li>
+                                <li>AEO performance monitoring &amp; reporting</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary mt-4">Optimize for AEO →</a>
+                        </div>
+                        <div class="reveal-left">
+                            <div class="service-visual"
+                                style="background:linear-gradient(135deg,#0D1B6E,#1a3a8f,#0050C8);">
+                                <div class="service-visual__orb service-visual__orb--1"></div>
+                                <div class="service-visual__orb service-visual__orb--2"></div>
+                                <span class="service-visual__emoji">🤖</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GEO -->
+                <div class="service-detail" id="geo">
+                    <div class="service-detail__grid">
+                        <div class="reveal-left">
+                            <div class="service-tag">✨ Generative AI</div>
+                            <h2>GEO — Generative Engine Optimization</h2>
+                            <p style="margin:1rem 0 0.5rem;">Get your brand cited, recommended, and referenced by
+                                ChatGPT,
+                                Google Gemini, Perplexity, Claude, and every major LLM-powered engine.</p>
+                            <p>GEO is the most advanced frontier of digital marketing. As consumers increasingly
+                                discover
+                                brands through AI conversations, we build the entity authority that makes AI recommend
+                                you.
+                            </p>
+                            <ul class="feature-list">
+                                <li>Brand entity establishment &amp; disambiguation</li>
+                                <li>Knowledge Graph optimization (Google &amp; Wikidata)</li>
+                                <li>E-E-A-T signal building for LLM trust</li>
+                                <li>Citation &amp; reference building in authoritative sources</li>
+                                <li>LLM-optimized content formats &amp; structures</li>
+                                <li>ChatGPT, Gemini &amp; Perplexity visibility monitoring</li>
+                                <li>AI brand sentiment &amp; accuracy management</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary mt-4">Start GEO Strategy →</a>
+                        </div>
+                        <div class="reveal-right">
+                            <div class="service-visual"
+                                style="background:linear-gradient(135deg,#080E3F,#1a0080,#0d4dcc);">
+                                <div class="service-visual__orb service-visual__orb--1"></div>
+                                <div class="service-visual__orb service-visual__orb--2"></div>
+                                <span class="service-visual__emoji">✨</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="service-detail" id="social">
+                    <div class="service-detail__grid reverse">
+                        <div class="reveal-right">
+                            <div class="service-tag">📱 Social Platforms</div>
+                            <h2>Social Media Marketing</h2>
+                            <p style="margin:1rem 0 0.5rem;">Build a powerful brand presence across Instagram, LinkedIn,
+                                Facebook, and X — and convert engaged followers into loyal paying customers.</p>
+                            <ul class="feature-list">
+                                <li>Platform-specific content strategy &amp; calendar</li>
+                                <li>Creative design &amp; video content production</li>
+                                <li>Community management &amp; engagement</li>
+                                <li>Influencer identification &amp; partnership</li>
+                                <li>Social media advertising (Meta, LinkedIn)</li>
+                                <li>Analytics &amp; performance reporting</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary mt-4">Grow Social Presence →</a>
+                        </div>
+                        <div class="reveal-left">
+                            <div class="service-visual"
+                                style="background:linear-gradient(135deg,#0D1B6E,#003a80,#0078CC);">
+                                <div class="service-visual__orb service-visual__orb--1"></div>
+                                <div class="service-visual__orb service-visual__orb--2"></div>
+                                <span class="service-visual__emoji">📱</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PPC -->
+                <div class="service-detail" id="ppc">
+                    <div class="service-detail__grid">
+                        <div class="reveal-left">
+                            <div class="service-tag">💰 Paid Media</div>
+                            <h2>PPC &amp; Paid Advertising</h2>
+                            <p style="margin:1rem 0 0.5rem;">Drive immediate, high-intent traffic with
+                                precision-targeted
+                                paid campaigns. Every ad rupee is tracked, optimized, and scaled for maximum ROI.</p>
+                            <ul class="feature-list">
+                                <li>Google Search, Display &amp; Shopping Ads</li>
+                                <li>Meta (Facebook &amp; Instagram) advertising</li>
+                                <li>LinkedIn Ads for B2B lead generation</li>
+                                <li>Landing page design &amp; CRO</li>
+                                <li>A/B testing &amp; creative optimization</li>
+                                <li>Real-time bid management &amp; budget optimization</li>
+                                <li>Full-funnel ROAS reporting</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary mt-4">Launch PPC Campaign →</a>
+                        </div>
+                        <div class="reveal-right">
+                            <div class="service-visual"
+                                style="background:linear-gradient(135deg,#0a1550,#0040a0,#0066ff);">
+                                <div class="service-visual__orb service-visual__orb--1"></div>
+                                <div class="service-visual__orb service-visual__orb--2"></div>
+                                <span class="service-visual__emoji">💰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Marketing -->
+                <div class="service-detail" id="content">
+                    <div class="service-detail__grid reverse">
+                        <div class="reveal-right">
+                            <div class="service-tag">✍️ Content &amp; Authority</div>
+                            <h2>Content Marketing</h2>
+                            <p style="margin:1rem 0 0.5rem;">Build topical authority through high-quality content that
+                                ranks
+                                on search engines, answers user questions, and earns citations from AI platforms.</p>
+                            <ul class="feature-list">
+                                <li>Content strategy &amp; topical authority mapping</li>
+                                <li>SEO blogs, articles &amp; long-form guides</li>
+                                <li>AEO-optimized FAQ &amp; answer content</li>
+                                <li>GEO-ready whitepapers &amp; expert content</li>
+                                <li>Landing page &amp; conversion copywriting</li>
+                                <li>Content distribution &amp; amplification</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary mt-4">Build Content Authority →</a>
+                        </div>
+                        <div class="reveal-left">
+                            <div class="service-visual"
+                                style="background:linear-gradient(135deg,#080E3F,#0d2d6b,#0055aa);">
+                                <div class="service-visual__orb service-visual__orb--1"></div>
+                                <div class="service-visual__orb service-visual__orb--2"></div>
+                                <span class="service-visual__emoji">✍️</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-orb cta-orb--1"></div>
+            <div class="cta-orb cta-orb--2"></div>
+            <div class="container" style="position:relative;z-index:2;">
+                <h2 class="reveal" style="color:white;">Not Sure Which Service You Need?</h2>
+                <p class="reveal">Get a free audit and we'll recommend the exact services to grow your business.</p>
+                <div class="btn-group reveal" style="justify-content:center;">
+                    <a href="contact.html" class="btn btn--primary" style="background:white;color:var(--navy);">Get Free
+                        Consultation →</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="assets/logo.png" alt="Kalindi Marketing" style="height:48px;margin-bottom:1rem;" />
+                    <p>India's premier agency for SEO, AEO, GEO, and digital marketing.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">▦</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#aeo">AEO</a></li>
+                        <li><a href="#geo">GEO</a></li>
+                        <li><a href="#social">Social Media</a></li>
+                        <li><a href="#ppc">PPC</a></li>
+                        <li><a href="#content">Content</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact</h4>
+                    <ul class="footer__links">
+                        <li><a href="mailto:hello@kalindimarketing.com">hello@kalindimarketing.com</a></li>
+                        <li><a href="contact.html">Book a Free Call</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 Kalindi Marketing. All rights reserved.</p>
+                <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

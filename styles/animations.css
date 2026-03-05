@@ -1,0 +1,420 @@
+/* =========================================
+   KALINDI MARKETING — Animations
+   ========================================= */
+
+/* ── Keyframes ──────────────────────────── */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-16px);
+    }
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgba(0, 120, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 60px rgba(0, 200, 255, 0.5);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateSlow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ── Hero Particles Canvas ──────────────── */
+#particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ── Hero Decorative Orbs ───────────────── */
+.hero__orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: float 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero__orb--1 {
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 120, 255, 0.25);
+    top: -100px;
+    right: -100px;
+    animation-delay: 0s;
+}
+
+.hero__orb--2 {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 200, 255, 0.2);
+    bottom: 50px;
+    right: 30%;
+    animation-delay: -3s;
+}
+
+.hero__orb--3 {
+    width: 200px;
+    height: 200px;
+    background: rgba(100, 0, 255, 0.12);
+    top: 200px;
+    left: 60%;
+    animation-delay: -6s;
+}
+
+/* ── CTA Section Orbs ───────────────────── */
+.cta-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    animation: float 10s ease-in-out infinite;
+}
+
+.cta-orb--1 {
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 120, 255, 0.3);
+    top: -100px;
+    left: -100px;
+}
+
+.cta-orb--2 {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 200, 255, 0.2);
+    bottom: -80px;
+    right: -80px;
+    animation-delay: -4s;
+}
+
+/* ── Page Hero Orbs ─────────────────────── */
+.page-hero__orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+.page-hero__orb--1 {
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 120, 255, 0.2);
+    top: -100px;
+    right: -100px;
+}
+
+.page-hero__orb--2 {
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 200, 255, 0.15);
+    bottom: -50px;
+    left: 10%;
+}
+
+/* ── Grid Decoration ────────────────────── */
+.hero__grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ── Scroll Reveal ──────────────────────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-35px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-left.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(35px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.92);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-scale.revealed {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ── Stagger Delays ─────────────────────── */
+.reveal-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+    transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+    transition-delay: 0.5s;
+}
+
+.reveal-delay-6 {
+    transition-delay: 0.6s;
+}
+
+/* ── Hero Text Animation ────────────────── */
+.hero-animate {
+    animation: slideUp 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.hero-animate-delay-1 {
+    animation-delay: 0.15s;
+    opacity: 0;
+}
+
+.hero-animate-delay-2 {
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.hero-animate-delay-3 {
+    animation-delay: 0.45s;
+    opacity: 0;
+}
+
+.hero-animate-delay-4 {
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.hero-animate-delay-5 {
+    animation-delay: 0.75s;
+    opacity: 0;
+}
+
+/* ── Floating Elements ──────────────────── */
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-delay-1 {
+    animation-delay: -2s;
+}
+
+.float-delay-2 {
+    animation-delay: -4s;
+}
+
+/* ── Gradient Text Animation ────────────── */
+.gradient-text-ani {
+    background: linear-gradient(90deg, #0078FF, #00C8FF, #0078FF);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+}
+
+/* ── Loading Spinner ────────────────────── */
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: var(--white);
+    border-radius: 50%;
+    animation: rotateSlow 0.8s linear infinite;
+    display: inline-block;
+}
+
+/* ── Counter Number ─────────────────────── */
+.counter-num {
+    display: inline-block;
+}
+
+/* ── Hover Lift ─────────────────────────── */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Animated Underline ─────────────────── */
+.link-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-accent);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-underline:hover::after {
+    width: 100%;
+}
+
+/* ── Form Success State ─────────────────── */
+.form-success {
+    display: none;
+    text-align: center;
+    padding: 3rem;
+    animation: scaleIn 0.4s ease forwards;
+}
+
+.form-success__icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
