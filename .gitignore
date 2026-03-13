@@ -1,0 +1,52 @@
+# ──────────────────────────────────────────
+# Kalindi-Site — .gitignore
+# ──────────────────────────────────────────
+
+# Video / Remotion project
+iwd-video/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build output
+dist/
+out/
+.next/
+.cache/
+
+# Tools / scripts directory (local dev only)
+tools/
+
+# Analysis / debug files
+har.json
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Temp files
+tmp/
+temp/
