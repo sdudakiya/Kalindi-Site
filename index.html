@@ -22,7 +22,8 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" href="/assets/logo.webp" />
   <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="stylesheet" href="/styles/animations.css" />
+  <link rel="stylesheet" href="/styles/animations.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/styles/animations.css" /></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -592,6 +593,7 @@
           <h4>Company</h4>
           <ul class="footer__links">
             <li><a href="/about/">About Us</a></li>
+            <li><a href="/case-study-bks-pani-puri/">Case Studies</a></li>
             <li><a href="/blog/">Blog &amp; Resources</a></li>
             <li><a href="/contact/">Contact</a></li>
           </ul>
