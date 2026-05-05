@@ -1,0 +1,5 @@
+# Cloudflare Pages Redirects
+# Force non-www to www (301 permanent)
+https://kalindimarketing.com/* https://www.kalindimarketing.com/:splat 301
+http://kalindimarketing.com/* https://www.kalindimarketing.com/:splat 301
+http://www.kalindimarketing.com/* https://www.kalindimarketing.com/:splat 301

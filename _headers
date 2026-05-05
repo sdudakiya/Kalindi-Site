@@ -1,3 +1,9 @@
-# _headers - Fallback Cache Headers for Images, CSS, JS
-/*
+# _headers - Cache Headers for Static Assets Only
+/assets/*
+  Cache-Control: public, max-age=31536000
+
+/styles/*
+  Cache-Control: public, max-age=31536000
+
+/scripts/*
   Cache-Control: public, max-age=31536000
