@@ -58,22 +58,10 @@ document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale')
 
 
 /* ── Animated Counters ───────────────────── */
+// Counters are pre-set in HTML to prevent CLS — animation disabled
 function animateCounter(el, target, duration = 2000, suffix = '') {
-  const start = performance.now();
-  const isDecimal = target % 1 !== 0;
-
-  const step = (timestamp) => {
-    const elapsed = timestamp - start;
-    const progress = Math.min(elapsed / duration, 1);
-    // Ease out cubic
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = isDecimal
-      ? (eased * target).toFixed(1)
-      : Math.floor(eased * target);
-    el.textContent = current + suffix;
-    if (progress < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
+  // No-op: values are already set in HTML to prevent layout shift
+  return;
 }
 
 const counterObserver = new IntersectionObserver((entries) => {
