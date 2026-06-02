@@ -53,6 +53,13 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+  // Elements are visible by default (CLS fix). Add animate class only to
+  // elements below viewport so they fade in on scroll.
+  var rect = el.getBoundingClientRect();
+  if (rect.top > window.innerHeight) {
+    var baseClass = el.className.match(/(reveal(?:-left|-right|-scale)?)/);
+    if (baseClass) el.classList.add(baseClass[1] + '-animate');
+  }
   revealObserver.observe(el);
 });
 

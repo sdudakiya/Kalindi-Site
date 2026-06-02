@@ -232,50 +232,50 @@
 }
 
 /* ── Scroll Reveal ──────────────────────── */
-.reveal {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+/* Elements are visible by default for CLS. JS adds .reveal-animate for animation. */
+.reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
 }
 
-.reveal.revealed {
+/* JS-triggered animation class */
+.reveal-animate {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal-animate.revealed {
     opacity: 1;
     transform: translateY(0);
 }
 
-.reveal-left {
+.reveal-left-animate {
     opacity: 0;
     transform: translateX(-35px);
-    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.reveal-left.revealed {
+.reveal-left-animate.revealed {
     opacity: 1;
     transform: translateX(0);
 }
 
-.reveal-right {
+.reveal-right-animate {
     opacity: 0;
     transform: translateX(35px);
-    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.reveal-right.revealed {
+.reveal-right-animate.revealed {
     opacity: 1;
     transform: translateX(0);
 }
 
-.reveal-scale {
+.reveal-scale-animate {
     opacity: 0;
     transform: scale(0.92);
-    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.reveal-scale.revealed {
+.reveal-scale-animate.revealed {
     opacity: 1;
     transform: scale(1);
 }
