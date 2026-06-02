@@ -51,3 +51,7 @@ logs/
 # Temp files
 tmp/
 temp/
+
+# Audit reports (private, not for production)
+seo-audit-*.pdf
+FULL-AUDIT-REPORT*.md
