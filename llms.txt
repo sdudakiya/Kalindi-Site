@@ -21,8 +21,17 @@ Kalindi Marketing is an India-based full-stack digital marketing agency speciali
 ## Case Studies
 - [BK's Pani Puri Gallery (Digital-First Launch)](https://www.kalindimarketing.com/case-study-bks-pani-puri/)
 
-## Further Reading
+## Blog & Guides
 - [The Complete Guide to GEO](https://www.kalindimarketing.com/blog-geo-guide/)
 - [How to Launch a Local Business](https://www.kalindimarketing.com/blog-local-business-launch/)
 - [In-House vs. Agency ROI](https://www.kalindimarketing.com/blog-in-house-vs-agency/)
 - [Local SEO Checklist 2026](https://www.kalindimarketing.com/blog-local-seo-checklist/)
+- [SEO vs AEO vs GEO](https://www.kalindimarketing.com/blog-seo-vs-aeo-vs-geo/)
+- [Google AI Overviews: AEO Playbook](https://www.kalindimarketing.com/blog-google-ai-overviews/)
+- [LinkedIn B2B Content Strategy](https://www.kalindimarketing.com/blog-linkedin-b2b/)
+- [Link Building in 2026](https://www.kalindimarketing.com/blog-link-building/)
+- [Google Ads Smart Bidding 2026](https://www.kalindimarketing.com/blog-google-ads-bidding/)
+- [E-E-A-T in the Age of LLMs](https://www.kalindimarketing.com/blog-eeat-llms/)
+- [Technical SEO Checklist 2026](https://www.kalindimarketing.com/blog-technical-seo/)
+- [Voice Search Optimization](https://www.kalindimarketing.com/blog-voice-search/)
+- [Digital Marketing Strategy from Scratch](https://www.kalindimarketing.com/blog-strategy-from-scratch/)
