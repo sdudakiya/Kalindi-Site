@@ -137,7 +137,7 @@
     position: absolute;
     border-radius: 50%;
     filter: blur(80px);
-    animation: float 8s ease-in-out infinite;
+    animation: none;
     pointer-events: none;
     z-index: 1;
 }
@@ -306,17 +306,16 @@
 }
 
 /* ── Hero Text Animation ────────────────── */
-.hero-animate {
-    animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
+/* Disabled to prevent CLS — elements render in final position */
+.hero-animate,
 .hero-animate-delay-1,
 .hero-animate-delay-2,
 .hero-animate-delay-3,
 .hero-animate-delay-4,
 .hero-animate-delay-5 {
-    animation-delay: 0s;
+    animation: none;
     opacity: 1;
+    transform: none;
 }
 
 /* ── Floating Elements ──────────────────── */
