@@ -115,8 +115,10 @@ function initParticles(canvasId) {
   let raf;
 
   function resize() {
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+    const width = Math.max(1, Math.round(canvas.clientWidth || canvas.offsetWidth));
+    const height = Math.max(1, Math.round(canvas.clientHeight || canvas.offsetHeight));
+    if (canvas.width !== width) canvas.width = width;
+    if (canvas.height !== height) canvas.height = height;
   }
 
   function createParticle() {
