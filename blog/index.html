@@ -114,6 +114,35 @@
             background: var(--blue);
             color: white;
         }
+
+        .featured-post-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 360px;
+        }
+
+        .featured-post-body {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .featured-post-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-post-body {
+                padding: 2rem;
+            }
+
+            .featured-post-body h2 {
+                font-size: 1.65rem !important;
+            }
+        }
     </style>
 </head>
 
@@ -157,9 +186,8 @@
                 </div>
                 <div class="reveal"
                     style="background:var(--gradient-primary);border-radius:var(--radius-lg);overflow:hidden;">
-                    <div style="display:grid;grid-template-columns:1fr 1fr;min-height:360px;">
-                        <div
-                            style="padding:3rem;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2;">
+                    <div class="featured-post-grid">
+                        <div class="featured-post-body">
                             <span class="blog-card__tag"
                                 style="background:rgba(0,200,255,0.2);color:#00C8FF;margin-bottom:1rem;">GEO
                                 Strategy</span>
@@ -188,6 +216,78 @@
                                 style="position:relative;z-index:2;filter:drop-shadow(0 0 30px rgba(0,200,255,0.6));">✨</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topic Clusters -->
+        <section class="section section--alt" style="padding-top:4rem;padding-bottom:4rem;">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label">Start Here</div>
+                    <h2>Choose the Search Problem You Want to Solve</h2>
+                    <p>Kalindi's resource library is organized around the three visibility surfaces modern brands need to win: Google search, AI answer engines, and social proof channels.</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid-3">
+                    <div class="card reveal reveal-delay-1">
+                        <div class="card__icon">🔍</div>
+                        <h3>Rank Better on Google</h3>
+                        <p>Use these guides to improve technical health, topical authority, local visibility, and link trust.</p>
+                        <ul style="display:grid;gap:0.75rem;margin-top:1.25rem;color:var(--text-mid);">
+                            <li><a href="/blog-technical-seo/" style="color:var(--blue);font-weight:600;">Technical SEO checklist</a></li>
+                            <li><a href="/blog-link-building/" style="color:var(--blue);font-weight:600;">Link building playbook</a></li>
+                            <li><a href="/blog-local-seo-checklist/" style="color:var(--blue);font-weight:600;">Local SEO checklist</a></li>
+                        </ul>
+                    </div>
+                    <div class="card reveal reveal-delay-2">
+                        <div class="card__icon">🤖</div>
+                        <h3>Get Picked by AI Answers</h3>
+                        <p>Build pages that answer questions clearly and give AI systems structured, trustworthy facts.</p>
+                        <ul style="display:grid;gap:0.75rem;margin-top:1.25rem;color:var(--text-mid);">
+                            <li><a href="/blog-google-ai-overviews/" style="color:var(--blue);font-weight:600;">Google AI Overviews guide</a></li>
+                            <li><a href="/blog-voice-search/" style="color:var(--blue);font-weight:600;">Voice search optimization</a></li>
+                            <li><a href="/blog-seo-vs-aeo-vs-geo/" style="color:var(--blue);font-weight:600;">SEO vs AEO vs GEO</a></li>
+                        </ul>
+                    </div>
+                    <div class="card reveal reveal-delay-3">
+                        <div class="card__icon">✨</div>
+                        <h3>Become AI-Citable</h3>
+                        <p>Learn how entity authority, proof density, and E-E-A-T signals influence AI recommendations.</p>
+                        <ul style="display:grid;gap:0.75rem;margin-top:1.25rem;color:var(--text-mid);">
+                            <li><a href="/blog-geo-guide/" style="color:var(--blue);font-weight:600;">Complete GEO guide</a></li>
+                            <li><a href="/blog-eeat-llms/" style="color:var(--blue);font-weight:600;">E-E-A-T for LLMs</a></li>
+                            <li><a href="/state-of-geo-india-2026/" style="color:var(--blue);font-weight:600;">State of GEO India</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top:3rem;overflow:auto;border:1px solid var(--grey-200);border-radius:var(--radius-md);background:white;">
+                    <table style="width:100%;border-collapse:collapse;min-width:760px;">
+                        <thead>
+                            <tr style="background:var(--gradient-primary);text-align:left;">
+                                <th style="padding:1rem;color:white;">Reader Goal</th>
+                                <th style="padding:1rem;color:white;">Best First Guide</th>
+                                <th style="padding:1rem;color:white;">Next Step</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);font-weight:700;">I need a full strategy</td>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);"><a href="/blog-strategy-from-scratch/" style="color:var(--blue);font-weight:600;">Build a digital marketing strategy</a></td>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);">Map your channels, then audit technical SEO.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);font-weight:700;">I want AI visibility</td>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);"><a href="/blog-geo-guide/" style="color:var(--blue);font-weight:600;">Complete GEO guide</a></td>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);">Add FAQs, schema, proof, and entity clarity.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);font-weight:700;">I run a local business</td>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);"><a href="/blog-local-business-launch/" style="color:var(--blue);font-weight:600;">Digital-first local launch</a></td>
+                                <td style="padding:1rem;border-top:1px solid var(--grey-100);">Use the local SEO checklist and optimize Google Business Profile.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
