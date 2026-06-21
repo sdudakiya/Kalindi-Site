@@ -59,6 +59,7 @@ PAGE_TITLES = {
     "seo-tools-templates-india/index.html": "SEO Tools & Templates India",
     "seo-trends-india-2026/index.html": "SEO Trends India 2026",
     "seo-vs-ppc-india/index.html": "SEO vs PPC India",
+    "free-seo-audit-food-brands-india/index.html": "Free SEO + GEO Audit for Food Brands",
     "state-of-geo-india-2026/index.html": "State of GEO India 2026",
     "top-geo-agencies-india-2026/index.html": "Top GEO Agencies India 2026",
 }
