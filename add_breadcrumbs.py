@@ -62,6 +62,14 @@ PAGE_TITLES = {
     "free-seo-audit-food-brands-india/index.html": "Free SEO + GEO Audit for Food Brands",
     "state-of-geo-india-2026/index.html": "State of GEO India 2026",
     "top-geo-agencies-india-2026/index.html": "Top GEO Agencies India 2026",
+    "seo-for-restaurant-chains-india/index.html": "SEO for Restaurant Chains India",
+    "seo-for-d2c-food-brands-india/index.html": "SEO for D2C Food Brands India",
+    "seo-for-fmcg-brands-india/index.html": "SEO for FMCG Brands India",
+    "geo-for-food-brands-india/index.html": "GEO for Food Brands India",
+    "social-media-food-brands-india/index.html": "Social Media for Food Brands India",
+    "content-marketing-food-brands-india/index.html": "Content Marketing for Food Brands India",
+    "seo-for-beverage-brands-india/index.html": "SEO for Beverage Brands India",
+    "digital-marketing-food-tech-india/index.html": "Digital Marketing for Food Tech India",
 }
 
 def make_breadcrumb(path_items, is_blog=False, is_service=False):
