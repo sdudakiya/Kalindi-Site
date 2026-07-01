@@ -82,7 +82,8 @@ PAGES = [
             ("Do you work with QSR chains specifically?", "Absolutely. QSR chains have unique SEO needs: high-volume local keywords, mobile-first experience, delivery platform integration, and review velocity. We've worked with quick-service and fast-casual brands and understand the metrics that matter: foot traffic driven by local search, delivery order volume from platform SEO, and brand discovery through Google and AI search."),
             ("How does AI visibility help restaurant chains?", "When customers ask ChatGPT or Gemini 'What are the best restaurants in [city]?' or 'Where can I get good [cuisine] near me?', you want your chain to be in that answer. GEO (Generative Engine Optimization) makes your brand discoverable through AI recommendations — a channel that's growing faster than traditional search for restaurant discovery.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
+            "related": [{"url": "/seo-for-d2c-food-brands-india/", "text": "SEO for D2C Food Brands"}, {"url": "/seo-for-fmcg-brands-india/", "text": "SEO for FMCG Brands"}, {"url": "/seo-for-beverage-brands-india/", "text": "SEO for Beverage Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
         "pillar_text": "SEO for Food Brands India"
     },
     {
@@ -162,7 +163,8 @@ PAGES = [
             ("How much does D2C food brand SEO cost?", "D2C food SEO pricing ranges from ₹30,000-₹75,000/month for brands with 10-50 products. Brands with broader catalogues or higher competition invest ₹75,000-₹1,50,000/month. All packages include a free initial audit to assess your exact opportunity."),
             ("Can you help my D2C food brand get cited by ChatGPT?", "Yes — this is our GEO (Generative Engine Optimization) service. We build the entity authority, structured content and citation patterns that make AI engines trust and recommend your brand. For D2C food brands, this includes optimizing product schema, creating authoritative buying guides, building third-party mentions and ensuring your brand entity is clear across all platforms.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
+            "related": [{"url": "/seo-for-restaurant-chains-india/", "text": "SEO for Restaurant Chains"}, {"url": "/seo-for-fmcg-brands-india/", "text": "SEO for FMCG Brands"}, {"url": "/seo-for-beverage-brands-india/", "text": "SEO for Beverage Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
         "pillar_text": "SEO for Food Brands India"
     },
     {
@@ -242,7 +244,8 @@ PAGES = [
             ("Do you help with Amazon and Flipkart SEO for FMCG brands?", "Yes. Our multi-platform SEO includes Amazon and Flipkart listing optimization: title and bullet point optimization, backend search terms, image optimization, review generation strategy, and A+ content creation. We treat marketplace SEO as complementary to Google SEO — consistent keyword strategy across both."),
             ("How much does FMCG brand SEO cost in India?", "FMCG SEO pricing varies significantly by category competitiveness and scope. For mid-size FMCG brands with 20-50 SKUs, pricing ranges from ₹60,000-₹1,50,000/month. For large FMCG companies with national presence and multiple brands, custom enterprise pricing applies. Every engagement begins with a free audit to scope the opportunity.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
+            "related": [{"url": "/seo-for-restaurant-chains-india/", "text": "SEO for Restaurant Chains"}, {"url": "/seo-for-d2c-food-brands-india/", "text": "SEO for D2C Food Brands"}, {"url": "/seo-for-beverage-brands-india/", "text": "SEO for Beverage Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
         "pillar_text": "SEO for Food Brands India"
     },
     {
@@ -319,7 +322,8 @@ PAGES = [
             ("How is GEO different from SEO for food brands?", "SEO focuses on ranking your website's pages in Google search results. GEO focuses on getting your brand cited inside AI-generated answers — which may or may not link to your website. For food brands, GEO is becoming essential because product recommendations increasingly happen inside AI chats rather than on Google SERPs."),
             ("Do you optimize for Google AI Overviews as well?", "Yes. Google AI Overviews sit at the intersection of AEO and GEO. We optimize your content to be featured in AI Overviews through structured answers, clear entity markup and authoritative sourcing — which also improves your citation potential in ChatGPT and Gemini.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/geo-services-india/",
+            "related": [{"url": "/seo-for-restaurant-chains-india/", "text": "SEO for Restaurant Chains"}, {"url": "/seo-for-d2c-food-brands-india/", "text": "SEO for D2C Food Brands"}, {"url": "/seo-for-fmcg-brands-india/", "text": "SEO for FMCG Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/geo-services-india/",
         "pillar_text": "GEO Services India"
     },
     {
@@ -396,7 +400,8 @@ PAGES = [
             ("Can social media drive foot traffic to restaurants?", "Absolutely. Our work for BK's Pani Puri Gallery combined social media content with local SEO to drive 3,500+ visitors in 3 days. Social media was the awareness engine that put the restaurant on people's radar before it even opened."),
             ("How much does food brand social media management cost?", "Social media management for food brands ranges from ₹25,000-₹60,000/month depending on the number of platforms, posting frequency and content production volume. All packages include strategy, content creation, community management and monthly reporting.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
+            "related": [{"url": "/seo-for-restaurant-chains-india/", "text": "SEO for Restaurant Chains"}, {"url": "/seo-for-d2c-food-brands-india/", "text": "SEO for D2C Food Brands"}, {"url": "/seo-for-fmcg-brands-india/", "text": "SEO for FMCG Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
         "pillar_text": "SEO for Food Brands India"
     },
     {
@@ -475,7 +480,8 @@ PAGES = [
             ("Do you write recipe content with structured data?", "Yes. Every recipe we create includes full Recipe schema markup: ingredients, instructions, cook time, nutrition information, serving size and ratings. This helps your recipes appear in Google Recipe View, voice search results and AI answers."),
             ("How much does food brand content marketing cost?", "Content marketing for food brands ranges from ₹35,000-₹80,000/month depending on volume, content types and research depth. Packages include strategy, writing, editing, SEO optimization, schema implementation and performance reporting. All engagements begin with a free content audit.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
+            "related": [{"url": "/seo-for-restaurant-chains-india/", "text": "SEO for Restaurant Chains"}, {"url": "/seo-for-d2c-food-brands-india/", "text": "SEO for D2C Food Brands"}, {"url": "/seo-for-fmcg-brands-india/", "text": "SEO for FMCG Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
         "pillar_text": "SEO for Food Brands India"
     },
     {
@@ -553,7 +559,8 @@ PAGES = [
             ("How does GEO work for beverage brands?", "When consumers ask ChatGPT 'What's the healthiest juice brand?' or 'Best summer drinks India', GEO makes your brand the recommended answer. We build entity authority, create AI-citable content about your ingredients and benefits, and secure third-party citations that AI engines trust."),
             ("Do you help beverage brands with Amazon and e-commerce SEO?", "Yes. We optimize beverage brand listings on Amazon, Flipkart and D2C stores for category search terms, ingredient keywords and pack-size queries.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
+            "related": [{"url": "/seo-for-restaurant-chains-india/", "text": "SEO for Restaurant Chains"}, {"url": "/seo-for-d2c-food-brands-india/", "text": "SEO for D2C Food Brands"}, {"url": "/seo-for-fmcg-brands-india/", "text": "SEO for FMCG Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
         "pillar_text": "SEO for Food Brands India"
     },
     {
@@ -631,7 +638,8 @@ PAGES = [
             ("How does GEO apply to food tech companies?", "Food tech companies benefit from AI visibility in two ways: (1) B2B queries — when restaurant owners ask ChatGPT 'best cloud kitchen software' or 'kitchen management platform', and (2) B2C queries — when consumers ask 'best food delivery app in Mumbai' or 'top healthy meal delivery service'. Our GEO framework targets both."),
             ("Do you offer investor-ready marketing reports?", "Yes. Our reporting includes metrics that matter for fundraising and investor updates: organic traffic growth rates, keyword portfolio expansion, AI citation growth, competitive market share changes and ROI attribution across channels.")
         ],
-        "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
+            "related": [{"url": "/seo-for-restaurant-chains-india/", "text": "SEO for Restaurant Chains"}, {"url": "/seo-for-d2c-food-brands-india/", "text": "SEO for D2C Food Brands"}, {"url": "/seo-for-fmcg-brands-india/", "text": "SEO for FMCG Brands"}, {"url": "/seo-for-beverage-brands-india/", "text": "SEO for Beverage Brands"}],
+    "pillar_link": "https://www.kalindimarketing.com/seo-for-food-brands-india/",
         "pillar_text": "SEO for Food Brands India"
     },
 ]
@@ -745,6 +753,17 @@ def build_page(p):
 
         sections_html += '</section>\n\n'
 
+    # Build Related Services section
+    related = p.get("related", [])
+    if related:
+        sections_html += '<section id="related">\n'
+        sections_html += '<h2>Related Services</h2>\n'
+        sections_html += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.5rem;">\n'
+        for r in related:
+            sections_html += f'<a href="{r["url"]}" class="btn btn--secondary" style="text-align:center;padding:1rem;display:block;">{r["text"]} \u2192</a>\n'
+        sections_html += '</div>\n'
+        sections_html += '</section>\n\n'
+
     # Build FAQ section HTML
     faq_html = ""
     for q, a in p.get("faqs", []):
@@ -755,6 +774,12 @@ def build_page(p):
     for section in p.get("sections", []):
         toc_items.append(f'<a href="#{section["id"]}">{section["title"]}</a>')
     toc = '\n'.join(toc_items)
+
+    # Build sidebar links (skip current page)
+    sidebar_links = ""
+    for _sl_slug, _sl_text in [("geo-for-food-brands-india", "GEO for Food Brands"), ("social-media-food-brands-india", "Social Media for Food Brands"), ("content-marketing-food-brands-india", "Content Marketing for Food Brands")]:
+        if _sl_slug != slug:
+            sidebar_links += f'          <a href="/{_sl_slug}/">{_sl_text}</a>\n'
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -870,9 +895,7 @@ def build_page(p):
 {toc}
         <div class="related-links">
           <a href="/seo-for-food-brands-india/">SEO for Food Brands India</a>
-          <a href="/geo-for-food-brands-india/">GEO for Food Brands</a>
-          <a href="/social-media-food-brands-india/">Social Media for Food Brands</a>
-          <a href="/content-marketing-food-brands-india/">Content Marketing for Food Brands</a>
+{sidebar_links}
           <a href="/case-studies/">Case Studies</a>
           <a href="/blog/">Blog</a>
         </div>
